@@ -1,0 +1,36 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function passwordValidate(){
+		var password = document.getElementById("password").value;
+		var confirmPassword = document.getElementById("confirmPassword").value;
+		  	if(password != confirmPassword) {
+		    alert("Passwords Don't Match");
+		    return false
+		  }	
+  return true;
+}
+
+</script>
+
+<body>
+</head>
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+
+<form method="post" action="connect.html">
+	First name: <input type="text" name=""> </br>
+	Last name: <input type="text" name=""></br>
+	Username: <input type="text" name=""></br>
+	Password: <input type="password" name=" " id="password" required></br>
+	Email: <input type="text" name=""></br>
+	Gender: <input type="radio" name="gender">Female<input type="radio" name="gender">Male</br>
+	Date of birth: <input type="date" name=""></br>
+	Phone number: <input type="text" name=""></br></br>
+
+	<input type="submit" value="Submit" onclick="return passwordValidate()"/>
+</form>	
+</body>
+<!--"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"-->
+
+
+</html>
